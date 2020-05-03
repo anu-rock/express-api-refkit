@@ -8,9 +8,11 @@ If you are looking to build a brand new API based on Node/Express and MongoDB, l
 
 The purpose of this repository — its _raison d'etre_ — is to provide reference code to anyone (especially myself) looking to create a beautiful 💄, secure 👮‍♂️ and well-tested 🧪 Node/Express-based API from scratch. You read it right: **from scratch**.
 
-Creating from scratch has the invaluable benefit of learning while doing. Most likely, there will be struggle which will make you better. You will know by heart all parts under the hood and exactly how they interact with each other. Basing your project off of a starter kit takes that away from you. Hence the need for a reference kit (or refkit, as I like to call it).
+Creating from scratch has the invaluable benefit of **learning while doing**. Most likely, there will be struggle which will make you better. You will know by heart all parts under the hood and exactly how they interact with each other. Basing your project off of a starter kit takes that away from you. Hence the need for a reference kit (or refkit, as I like to call it).
 
 Call it a non-textual, non-visual tutorial on building your own API. You see the code, you learn from it, and perhaps adapt it in your own project.
+
+Importantly, I believe the code in this repository will be practically useful because I did not write it as part of a blog or video tutorial. I wrote it to create a production-grade API that I could actually deploy and use in an app.
 
 Copy and prosper 🖖.
 
@@ -68,13 +70,13 @@ Do the first part once and then dedicate yourself to the second part.
 - Clone the repository:
 
 ```
-git clone https://github.com/anuragbhd/express-api-refkit.git <project_name>
+git clone https://github.com/anuragbhd/express-api-refkit.git
 ```
 
 - Run the API
 
 ```
-cd <project_name>
+cd express-api-refkit
 docker-compose up
 ```
 
@@ -93,6 +95,8 @@ You should see something like this:
 ![mongo-express-screenshot](https://user-images.githubusercontent.com/1288616/80913469-7ce64a80-8d62-11ea-85f9-04507ddefb69.png)
 
 ### Creating Your Own API
+
+<img alt="Mandalorian this is the way quote poster" src="https://i.ytimg.com/vi/vZWS7Xy-5BE/maxresdefault.jpg" width="400">
 
 1. Fire up your terminal.
 
