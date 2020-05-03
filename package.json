@@ -1,0 +1,47 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "A suite of RESTful APIs for a fictitious blogging app",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node src/server.js",
+    "watch": "nodemon src/server.js",
+    "watch-debug": "nodemon --watch ./src --inspect=0.0.0.0:7841 src/server.js",
+    "lint": "eslint \"**/*.js\" --quiet --fix",
+    "test": "env NODE_ENV=test jest --forceExit --verbose",
+    "seed-test": "env NODE_ENV=test node src/util/seed-db.js"
+  },
+  "keywords": [
+    "food",
+    "recipe",
+    "ingredient"
+  ],
+  "author": "Anurag Bhandari <ab@anuragbhandari.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.7",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.2.6",
+    "mongoose-seed": "^0.6.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}

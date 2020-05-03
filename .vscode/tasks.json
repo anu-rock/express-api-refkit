@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch-debug",
+      "command": "npm",
+      "args": ["run", "watch-debug"],
+      "type": "shell",
+      "isBackground": true,
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+version: '3'
+services:
+  mongo:
+    image: 'mongo:3.6'
+    restart: always
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+
+  api:
+    build: .
+    ports:
+      - 3000:3000 # main port
+      - 7841:7841 # debug port
+    links:
+      - mongo
+    depends_on:
+      - mongo
+      - mongo-express
+    volumes:
+      - ./:/home/node/app
+      - /home/node/app/node_modules
