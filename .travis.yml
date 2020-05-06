@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker-compose up -d
+  - docker-compose ps
+  - docker-compose exec api /bin/bash -c "npm test"
+
+notifications:
+  email:
+    - ab@anuragbhandari.com

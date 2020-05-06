@@ -1,6 +1,6 @@
 # Express API Refkit
 
-[![Dependency Status](https://david-dm.org/anuragbhd/express-api-refkit.svg)](https://david-dm.org/anuragbhd/express-api-refkit)
+[![Dependency Status](https://david-dm.org/anuragbhd/express-api-refkit.svg)](https://david-dm.org/anuragbhd/express-api-refkit) [![Build Status](https://travis-ci.com/anuragbhd/express-api-refkit.svg?branch=master)](https://travis-ci.com/github/anuragbhd/express-api-refkit)
 
 If you are looking to build a brand new API based on Node/Express and MongoDB, look no futher.
 
