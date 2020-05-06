@@ -4,13 +4,33 @@ const request = require('supertest');
 
 const app = require('../src/app');
 const {
+  existingEmail,
+  validPassword,
   articleTitle,
   articleBody,
   articleTags,
-  authToken,
 } = require('./helpers/test-data');
 
 const apiUrl = '/api/articles';
+let authToken = '';
+
+/**
+ * Generates a JWT auth token that will be used for authorization in tests.
+ */
+async function generateAuthToken() {
+  return request(app).post('/api/auth').send({
+    email: existingEmail,
+    password: validPassword,
+  });
+}
+
+/**
+ * Do this before executing any test.
+ */
+beforeAll(async () => {
+  const res = await generateAuthToken();
+  authToken = res.body.token;
+});
 
 /**
  * T H E  T E S T   S U I T E
