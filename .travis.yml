@@ -6,7 +6,6 @@ services:
 script:
   - docker-compose up -d
   - docker-compose ps
-  - docker-compose exec api /bin/bash -c "npm run seed-test"
   - docker-compose exec api /bin/bash -c "npm test"
 
 notifications:

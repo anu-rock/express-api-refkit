@@ -9,7 +9,8 @@
     "watch": "nodemon src/server.js",
     "watch-debug": "nodemon --watch ./src --inspect=0.0.0.0:7841 src/server.js",
     "lint": "eslint \"**/*.js\" --quiet --fix",
-    "test": "env NODE_ENV=test jest --forceExit --verbose",
+    "test": "npm run seed-test && npm run test-api",
+    "test-api": "env NODE_ENV=test jest --forceExit --verbose",
     "seed-test": "env NODE_ENV=test node src/util/seed-db.js"
   },
   "keywords": [
